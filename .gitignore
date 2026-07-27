@@ -1,0 +1,28 @@
+# Dependencies (reinstalled via `npm install`)
+/node_modules
+
+# Next.js build output (regenerated via `npm run build`)
+/.next
+/out
+
+# Environment secrets (never committed/downloaded)
+.env
+.env.local
+.env.*.local
+
+# Logs & OS files
+*.log
+.DS_Store
+
+# TypeScript build cache
+*.tsbuildinfo
+next-env.d.ts
+
+# Local archive artifacts (source files live in their real folders)
+*.zip
+
+# IMPORTANT: everything else IS included, especially:
+#   public/            (all official ACE images, crest.svg, favicon)
+#   public/gallery/    (all 102 official ACE photographs)
+#   src/               (all source code)
+#   README.md, package.json, config files

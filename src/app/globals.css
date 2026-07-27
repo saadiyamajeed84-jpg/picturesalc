@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #091b63;
+  --color-navy-600: #132c8c;
+  --color-navy-700: #0b2075;
+  --color-gold: #d6a019;
+  --color-gold-light: #f0c04a;
+  --color-ink: #000000;
+  --color-mist: #f7f8fc;
+  --color-accent: #3ba7ff;
+  --color-success: #2cb67d;
+
+  --font-display: var(--font-poppins), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+
+  --shadow-soft: 0 20px 60px -20px rgba(9, 27, 99, 0.25);
+  --shadow-glow: 0 0 0 1px rgba(255, 255, 255, 0.6), 0 30px 70px -25px rgba(9, 27, 99, 0.35);
+}
+
+:root {
+  --brand-navy: #091b63;
+  --brand-navy-2: #132c8c;
+  --brand-gold: #d6a019;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 6rem;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #000000;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Justify body copy across the site */
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Keep short helper/label paragraphs and centered contexts natural */
+.text-center p,
+.no-justify p,
+p.no-justify {
+  text-align: inherit;
+}
+
+h1, h2, h3, h4, h5, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* Utilities */
+.container-x {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .container-x {
+    padding-inline: 2rem;
+  }
+}
+
+.text-gradient-gold {
+  background: linear-gradient(90deg, #f0c04a, #d6a019);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-navy-gradient {
+  background: radial-gradient(120% 120% at 15% 0%, #132c8c 0%, #091b63 55%, #060f3d 100%);
+}
+
+.bg-mesh {
+  background-color: #091b63;
+  background-image:
+    radial-gradient(50% 50% at 80% 10%, rgba(59, 167, 255, 0.22) 0%, transparent 60%),
+    radial-gradient(45% 45% at 10% 90%, rgba(214, 160, 25, 0.18) 0%, transparent 60%),
+    radial-gradient(60% 60% at 50% 50%, rgba(19, 44, 140, 0.6) 0%, transparent 70%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(9, 27, 99, 0.08);
+}
+
+.card-hover {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.marquee-track {
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

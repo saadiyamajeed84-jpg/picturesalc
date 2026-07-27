@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 132" width="120" height="132" role="img" aria-label="ACE Language Centre heraldic crest">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0c04a"/>
+      <stop offset="1" stop-color="#c8901a"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#183aa0"/>
+      <stop offset="1" stop-color="#0b1f6e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- White rounded badge -->
+  <rect x="2" y="2" width="116" height="128" rx="20" fill="#ffffff" stroke="#e6e8f0" stroke-width="1.5"/>
+
+  <!-- Top crest ornament: helm + torch/quill -->
+  <g fill="url(#gold)">
+    <path d="M60 8 l3.4 6.6 -3.4 2 -3.4-2z"/>
+    <circle cx="60" cy="16.5" r="3.2"/>
+    <path d="M52 20 q8 -5 16 0 q-2 5 -8 5 q-6 0 -8 -5z"/>
+  </g>
+
+  <!-- Shield body -->
+  <path d="M60 24
+           C74 24 86 26 92 28
+           L92 66
+           C92 88 78 100 60 108
+           C42 100 28 88 28 66
+           L28 28
+           C34 26 46 24 60 24 Z"
+        fill="url(#shield)" stroke="url(#gold)" stroke-width="2.5"/>
+
+  <!-- Inner shield line -->
+  <path d="M60 30
+           C71 30 81 31.5 87 33
+           L87 65
+           C87 84 75 95 60 102
+           C45 95 33 84 33 65
+           L33 33
+           C39 31.5 49 30 60 30 Z"
+        fill="none" stroke="url(#gold)" stroke-width="0.9" opacity="0.6"/>
+
+  <!-- Left lion rampant (facing right/inward) -->
+  <g fill="url(#gold)" transform="translate(0,0)">
+    <path d="M40 44
+             c-2 -3 -6 -3 -7 -1 c1 -2 4 -3 6 -2
+             c-1 -3 1 -6 3 -6 c-1 2 0 4 1 5
+             c2 -1 4 -1 5 1
+             c2 0 3 2 3 4
+             c1 1 1 3 0 4
+             c1 1 1 3 -1 4 l2 3 -3 -1 1 4 -3 -2
+             c-1 3 -3 5 -6 6 l3 2 -6 0
+             c1 -2 2 -3 2 -5
+             c-3 -1 -5 -4 -5 -8
+             c0 -4 3 -8 6 -9
+             c-2 0 -4 2 -5 4 z"/>
+    <circle cx="44" cy="47" r="1" fill="#0b1f6e"/>
+  </g>
+
+  <!-- Right lion rampant (mirror) -->
+  <g fill="url(#gold)" transform="translate(120,0) scale(-1,1)">
+    <path d="M40 44
+             c-2 -3 -6 -3 -7 -1 c1 -2 4 -3 6 -2
+             c-1 -3 1 -6 3 -6 c-1 2 0 4 1 5
+             c2 -1 4 -1 5 1
+             c2 0 3 2 3 4
+             c1 1 1 3 0 4
+             c1 1 1 3 -1 4 l2 3 -3 -1 1 4 -3 -2
+             c-1 3 -3 5 -6 6 l3 2 -6 0
+             c1 -2 2 -3 2 -5
+             c-3 -1 -5 -4 -5 -8
+             c0 -4 3 -8 6 -9
+             c-2 0 -4 2 -5 4 z"/>
+  </g>
+  <circle cx="76" cy="47" r="1" fill="#0b1f6e"/>
+
+  <!-- Central motto disc -->
+  <circle cx="60" cy="60" r="10" fill="#0b1f6e" stroke="url(#gold)" stroke-width="1.2"/>
+  <text x="60" y="58" text-anchor="middle" font-family="Georgia, serif" font-size="5" font-style="italic" fill="#f0c04a">Être</text>
+  <text x="60" y="64.5" text-anchor="middle" font-family="Georgia, serif" font-size="4.4" font-style="italic" fill="#f0c04a">Premier</text>
+
+  <!-- Bottom banner ribbon -->
+  <g>
+    <path d="M18 96 L102 96 L96 108 L24 108 Z" fill="url(#gold)"/>
+    <path d="M18 96 L24 108 L12 106 Z" fill="#a9760f"/>
+    <path d="M102 96 L96 108 L108 106 Z" fill="#a9760f"/>
+    <text x="60" y="104.5" text-anchor="middle" font-family="Georgia, serif" font-size="6.6" font-weight="700" letter-spacing="0.5" fill="#0b1f6e">ACE LANGUAGE CENTRE</text>
+  </g>
+</svg>
